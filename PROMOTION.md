@@ -123,12 +123,14 @@ helps others discover the ecosystem (and your project). Totally optional — tha
 
 **清单不好传播，文章好传播。** 把清单里的隐性知识抽出来写成独立内容，文末统一引流到仓库。
 
-高潜力选题（按传播力排序）：
+> ✅ **头号选题已写成成稿**：[ARTICLES.md](ARTICLES.md) 中的《本地跑 YuE2 全方案横评：8GB / 16GB / 24GB 显存到底该怎么选》——可直接复制到知乎 / B站专栏 / 公众号发布，配图用 `assets/social-preview.png`。
 
-1. **《2026 本地跑 YuE2 全方案横评：8GB / 16GB / 24GB 显存各该怎么选》** — 最强选题。素材你全都有（显存速查、量化方案、GUI 对比），别人写不出来。
-2. **《不想付 Suno 订阅费？开源替代 YuE2 的完整本地部署指南》** — 直击最精准人群与搜索词。
-3. **《Mac 上跑 YuE2：MLX 移植现状》** — 受众窄但极精准，中文资料几乎空白。
-4. **《把 YuE2 接进 ComfyUI：从原生节点到 LoRA 训练》** — ComfyUI 社区体量大、转发意愿高。
+其余备选选题（按传播力排序）：
+
+1. **《不想付 Suno 订阅费？开源替代 YuE2 的完整本地部署指南》** — 直击最精准人群与搜索词。
+2. **《Mac 上跑 YuE2：MLX 移植现状》** — 受众窄但极精准，中文资料几乎空白。
+3. **《把 YuE2 接进 ComfyUI：从原生节点到 LoRA 训练》** — ComfyUI 社区体量大、转发意愿高。
+4. **《我用 YuE2 做了一首歌：从提示词到分轨母带的完整过程》** — 过程记录型，可读性强。
 
 分发渠道：知乎（长文）、B站（视频/专栏）、即刻/V2EX（短文）、Reddit（英文版）、X（英文版）。每篇文末统一放一句：
 
@@ -228,7 +230,7 @@ https://github.com/RevolutionLA/awesome-YuE
 - [ ] comfyui-wiki 站长触达（§2.3）
 - [ ] 索引站提交（§2.4）
 - [ ] 53 个已通知仓库追加 backlink 请求（§2.5）
-- [ ] 写出并发布横评文章（§3 选题 1）
+- [ ] 发布 [ARTICLES.md](ARTICLES.md) 中的横评成稿（知乎 / B站 / 公众号，配 `assets/social-preview.png`）
 
 **第 4 周起（分发）**
 - [ ] Reddit → X → 中文社区，每周 1–2 个渠道，不要同日全发
