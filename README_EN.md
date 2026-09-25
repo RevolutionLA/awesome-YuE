@@ -17,12 +17,14 @@
 
 YuE (乐) is an open-source full-song music generation foundation model by the [m-a-p](https://github.com/multimodal-art-projection) team (lyrics2song) — often called "open-source Suno". Since its release in January 2025 the community has built a rich ecosystem of UIs, quantized runtimes, ComfyUI nodes, local ports and music-production workflows. This repo curates the best of the **YuE / YuE2 ecosystem**.
 
+> 📊 **70+ projects listed** · Last updated 2026-09-26 · Link health checked quarterly
 > 📌 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion criteria. Categories are loosely ordered by popularity/activity.
 
 ---
 
 ## 📑 Contents
 
+- [Quick Picks](#-quick-picks)
 - [Official Resources](#️-official-resources)
 - [GUIs](#-guis)
 - [Quantization & Acceleration](#-quantization--acceleration)
@@ -34,6 +36,27 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 - [Related Projects](#-related-projects)
 - [Community](#-community)
 - [Contributing](#-contributing)
+
+---
+
+## 🚀 Quick Picks
+
+> Not sure where to start? Match your hardware and goal to a row.
+
+| Your situation | Go to |
+|---|---|
+| Just want to hear it first | [NOIZ online demo](https://yue.noizai.net/) — free in the browser, no setup |
+| Windows, want it working out of the box (100% offline) | [RevolutionLA/YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench) — songwriting + covers + RVC + LRC lyrics + batch queue |
+| 24GB+ VRAM, best quality | [Official YuE2 BF16](https://github.com/multimodal-art-projection/YuE) + [official Skill](https://github.com/multimodal-art-projection/YuE/tree/main/skills/yue2-music) |
+| 16GB VRAM | [exl2 / INT8 quantized weights](#-quantization--acceleration) |
+| 8GB VRAM | [deepbeepmeep/YuEGP](https://github.com/deepbeepmeep/YuEGP) or [YuE-UI quantized mode](https://github.com/joeljuvel/YuE-UI) |
+| Mac (Apple Silicon) | [vanch007/mlx-Yue](https://github.com/vanch007/mlx-Yue) or [tonywestonuk/YuE-Studio](https://github.com/tonywestonuk/YuE-Studio) |
+| Want to use it in ComfyUI | ComfyUI native `YuE2GenerateMusic` node, see [ComfyUI Integrations](#-comfyui-integrations) |
+| Want to edit the score / keep melody, swap lyrics | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio) (staff) · [FL-YuE2](https://github.com/filliptm/ComfyUI-FL-YuE2) (piano roll) |
+| Need cloud / an API | [sruckh/Yue2-runpod](https://github.com/sruckh/Yue2-runpod) · [yue2-sidecar](https://github.com/Sparaa/yue2-sidecar) (FastAPI) |
+| Don't want a Python env | [yue2.cpp](https://github.com/engival/yue2.cpp) — a single C++ executable |
+
+> Short on VRAM? Jump to [Quantization & Acceleration](#-quantization--acceleration). Want the prompt recipes? See [Tutorials & Best Practices](#-tutorials--best-practices).
 
 ---
 

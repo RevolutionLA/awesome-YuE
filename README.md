@@ -21,6 +21,7 @@ YuE（乐）是 [m-a-p](https://github.com/multimodal-art-projection) 团队开�
 
 YuE (乐) is an open-source full-song music generation foundation model by the [m-a-p](https://github.com/multimodal-art-projection) team (lyrics2song) — often called "open-source Suno". Since its release in January 2025 the community has built a rich ecosystem of UIs, quantized runtimes, ComfyUI nodes, local ports and music-production workflows. This repo curates the best of the **YuE / YuE2 ecosystem**.
 
+> 📊 **收录 70+ 个项目** · 最近更新 2026-09-26 · 每季度巡检链接有效性
 > 📌 收录标准与提交方式见 [贡献指南](CONTRIBUTING.md)。分类排序大致按热度/活跃度，仅供浏览参考。
 > 📌 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion criteria. Categories are loosely ordered by popularity/activity.
 
@@ -28,6 +29,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 
 ## 📑 目录
 
+- [快速选择 Quick Picks](#-快速选择-quick-picks)
 - [官方资源 Official](#️-官方资源-official)
 - [图形界面 GUI](#️-图形界面-gui)
 - [量化与推理加速 Quantization & Acceleration](#-量化与推理加速-quantization--acceleration)
@@ -39,6 +41,27 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 - [相关项目 Related Projects](#-相关项目-related-projects)
 - [社区 Community](#-社区-community)
 - [贡献 Contributing](#-贡献-contributing)
+
+---
+
+## 🚀 快速选择 Quick Picks
+
+> 不知道从哪儿开始？按你的硬件和需求直接对号入座，一行搞定。
+
+| 你的情况 | 直接去 |
+|---|---|
+| 只想先听听效果 | [NOIZ 在线 Demo](https://yue.noizai.net/) — 浏览器免费试玩，不用装环境 |
+| Windows，想开箱即用、100% 离线 | [RevolutionLA/YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench) — 写歌 + 翻唱 + RVC 换声 + LRC 歌词 + 批量队列 |
+| 显存 24GB+，要最好音质 | [官方 YuE2 BF16](https://github.com/multimodal-art-projection/YuE) + [官方 Skill](https://github.com/multimodal-art-projection/YuE/tree/main/skills/yue2-music) |
+| 显存 16GB | [exl2 / INT8 量化权重](#-量化与推理加速-quantization--acceleration) |
+| 显存 8GB | [deepbeepmeep/YuEGP](https://github.com/deepbeepmeep/YuEGP) 或 [YuE-UI 量化模式](https://github.com/joeljuvel/YuE-UI) |
+| Mac（Apple Silicon） | [vanch007/mlx-Yue](https://github.com/vanch007/mlx-Yue) 或 [tonywestonuk/YuE-Studio](https://github.com/tonywestonuk/YuE-Studio) |
+| 想在 ComfyUI 里用 | ComfyUI 原生 `YuE2GenerateMusic` 节点，见 [ComfyUI 集成](#-comfyui-集成-comfyui-integrations) |
+| 想改乐谱 / 保留旋律换歌词 | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio)（五线谱）· [FL-YuE2](https://github.com/filliptm/ComfyUI-FL-YuE2)（钢琴卷帘） |
+| 要跑云端 / 需要 API | [sruckh/Yue2-runpod](https://github.com/sruckh/Yue2-runpod) · [yue2-sidecar](https://github.com/Sparaa/yue2-sidecar)（FastAPI） |
+| 不想装 Python 环境 | [yue2.cpp](https://github.com/engival/yue2.cpp) — 单个 C++ 可执行文件 |
+
+> 显存不够？直接翻到 [量化与推理加速](#-量化与推理加速-quantization--acceleration)；想系统了解写法，看 [教程与最佳实践](#-教程与最佳实践-tutorials--best-practices)。
 
 ---
 
