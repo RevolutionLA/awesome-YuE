@@ -155,7 +155,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [T8mars/Comfyui-YuE2-T8](https://github.com/T8mars/Comfyui-YuE2-T8) | YuE2 ComfyUI 节点包 | — |
 | [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | YuE2 LoRA 训练器：用自己的音轨训练风格 LoRA（NAR 分支，24GB 显存推荐），ComfyUI 原生格式输出 | — |
 | [ScryptHunter/ComfyUI-YuE2](https://github.com/ScryptHunter/ComfyUI-YuE2) | 依赖隔离的兼容性 fork，适配新版 ComfyUI 与 Transformers | Apache-2.0 |
-| [pytraveler/YuE2-ComfyUI](https://github.com/pytraveler/YuE2-ComfyUI) | YuE2-3B 的 ComfyUI 个人适配版 | Apache-2.0 |
+| [pytraveler/YuE2-ComfyUI](https://github.com/pytraveler/YuE2-ComfyUI) | 钢琴卷帘乐谱编辑 + Edit Track（对成品做重录/剪切/移动/延长）+ 音频或 MIDI 翻唱 + 作词与 LoRA 支持 | Apache-2.0 |
 | [KytraScript/ComfyUI-FS_Audio_Suite](https://github.com/KytraScript/ComfyUI-FS_Audio_Suite) | 模块化 YuE2 音频生成节点 + 母带/降噪工作流（含封面生成） | — |
 | [o-l-l-i/ComfyUI-Olm-YuE2](https://github.com/o-l-l-i/ComfyUI-Olm-YuE2) | 风格+歌词生成歌曲，可选乐谱查看/编辑 | — |
 | [nvmax/ComfyUI-YuE2](https://github.com/nvmax/ComfyUI-YuE2) | YuE2 ComfyUI 节点 | Apache-2.0 |

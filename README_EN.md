@@ -150,7 +150,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [T8mars/Comfyui-YuE2-T8](https://github.com/T8mars/Comfyui-YuE2-T8) | YuE2 ComfyUI node pack | — |
 | [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | YuE2 LoRA trainer: train a style LoRA on your own tracks (NAR branch, 24GB VRAM recommended), native ComfyUI format output | — |
 | [ScryptHunter/ComfyUI-YuE2](https://github.com/ScryptHunter/ComfyUI-YuE2) | Compatibility fork with isolated dependencies, adapted for newer ComfyUI and Transformers | Apache-2.0 |
-| [pytraveler/YuE2-ComfyUI](https://github.com/pytraveler/YuE2-ComfyUI) | Personal ComfyUI adaptation of YuE2-3B | Apache-2.0 |
+| [pytraveler/YuE2-ComfyUI](https://github.com/pytraveler/YuE2-ComfyUI) | YuE2 nodes with a piano-roll score editor, Edit Track (retake, cut, move or extend parts of a finished song), covers from audio or MIDI, a lyrics writer and LoRA support | Apache-2.0 |
 | [KytraScript/ComfyUI-FS_Audio_Suite](https://github.com/KytraScript/ComfyUI-FS_Audio_Suite) | Modular YuE2 audio generation nodes + mastering/denoise workflows (cover generation included) | — |
 | [o-l-l-i/ComfyUI-Olm-YuE2](https://github.com/o-l-l-i/ComfyUI-Olm-YuE2) | Style + lyrics → song, optional score view/edit | — |
 | [nvmax/ComfyUI-YuE2](https://github.com/nvmax/ComfyUI-YuE2) | YuE2 ComfyUI nodes | Apache-2.0 |
