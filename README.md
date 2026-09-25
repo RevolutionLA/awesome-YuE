@@ -26,6 +26,23 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 
 ---
 
+## ⭐ 特别推荐 Featured
+
+<div align="center">
+
+### 🎹 [YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench)
+
+**本地 AI 音乐生成工作站 · Local Offline AI Music Workstation**
+
+YuE2 写歌 + AI 翻唱 + RVC 换声 + LRC 滚动歌词 + 批量队列，100% 离线开箱即用，一个免费的本地 Suno 替代方案。
+YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch queue — fully offline, a free local Suno alternative.
+
+`Windows` · `Python` · `gguf/llama-cpp` · `RVC` · `lyrics2song`
+
+</div>
+
+---
+
 ## 📑 目录
 
 - [官方资源 Official](#官方资源-official)
