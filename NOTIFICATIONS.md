@@ -76,3 +76,48 @@ Thanks for building for the YuE community! 🎶
 - HF 权重类条目（Doctor-Shotgun、Alissonerdx 等）没有 issue 区，用 Hugging Face 的 Community Discussion 代替，或跳过；
 - 一次发太多 issue 可能被判定为 spam，建议分几天、每批 ≤10 个；
 - 对方要求下架时，24 小时内移除并回复确认。
+
+---
+
+## 反向链接请求 Backlink Requests（2026-09-26 完成）
+
+> 在上一步的通知 issue 里各追加了**一条**"可选 backlink 请求"评论——请对方在其 README 加一行 `Listed in [awesome-YuE](https://github.com/RevolutionLA/awesome-YuE)`。语气明确 optional，一次性，不刷屏。
+> 实现方式：逐一反查每个收录仓库中由 `RevolutionLA` 创建、标题含 `awesome-YuE` 的**未关闭** issue，仅在其上追加评论（已存在同款评论的自动跳过）。
+
+**成功发送 57 条**（仓库#issue 编号）：
+
+```
+Blizaine/Maestro#154            CodeCat04/Whiskerwave-Studio#1       Cognito-Inc-451/Yue2-CUDA-Windows#1
+DocShotgun/ds-yue-webui#1       EmeraldApple-AI/ComfyUI-YuE2#2        John-yg-Yim/LastAlbum-music-api#1
+Joker56156/tio-music-studio#1   KytraScript/ComfyUI-FS_Audio_Suite#3  Ladypoly/YuE2_WebUI#5
+LeeAeron/YuE2UI#1               Mozer/YuE-extend#4                    PasiKoodaa/YuE2-Radio#1
+Rdx-ai-art/yue2-mlx.pinokio#3   ScryptHunter/ComfyUI-YuE2#6           ServeurpersoCom/yue2.cpp#11
+Sparaa/yue2-sidecar#1           Starnodes2024/ComfyUI-YuE2-Trainer#3  T8mars/Comfyui-YuE2-T8#17
+TheLocalLab/ComfyUI-SongScribe#1 UnlimitedEditing/ComfyUI-YuE2Fast#1  VincentGourbin/yue2-mlx-swift#2
+ace-step/ACE-Step#425           aidec/YuE-exllamav2-GUI-easy#1        arinltte/YuE2Mac#1
+arthurfarache/muvflow-yue#1     cicalooo/ComfyUI-YuE2-LongSong#1      daig/yue2-mlx#1
+deadjoe/yue2_groove#13          engival/yue2.cpp#1                    filliptm/ComfyUI-FL-YuE2#9
+giapnguyen74/yue2-server#1      inikolax/remiqora#8                   krakenunbound/yue2-studio#3
+lee101/yue-cog#1                mikkel/yue2-concept-sliders#1         mitnits/yue2-same-music-new-lyrics#1
+nheegen/yue2-session-bridge#1   nvmax/ComfyUI-YuE2#3                  o-l-l-i/ComfyUI-Olm-YuE2#3
+piscesbody/ComfyUI-YuE2#3       pytraveler/YuE2-ComfyUI#7             sdbds/YuE-for-windows#3
+siliconsense/yue2-studio-pc#1   smittyPNW/YuE-Studio#2                sruckh/Yue2-runpod#2
+stavitian/yue2-studio#1         tonywestonuk/YuE-Studio#6             usamireko/YuE-exllamav2-Colab#1
+vanch007/mlx-Yue#1              vrgamegirl19/Yue2_Studio#20           yolanother/runpod-yuegp-serverless#1
+deepbeepmeep/YuEGP#65           joeljuvel/YuE-UI#22                   sgsdxzy/YuE-exllamav2#25
+smthemex/ComfyUI_YuE#36         timoncool/YuE2-Studio#6               NoizAI/YuE2-Turbo#1
+```
+
+**跳过：**
+
+| 仓库 | 原因 |
+|---|---|
+| ianiv/YuE2、alisson-anjos/YuE-exllamav2-UI、alisson-anjos/YuE-Interface、WrongProtocol/YuE-exllamav2-UI | 关闭了 Issue 区，无法触达 |
+| dynamohum/YuE2gen-studio、deadjoe/yue2-groove-pinokio | 无 open 通知 issue |
+| multimodal-art-projection/YuE | 走 PR 通道（见 PROMOTION.md §2.1） |
+| deepseek-ai/awesome-deepseek-integration、sindresorhus/awesome、nomadkaraoke/python-audio-separator | README 中的纯参考链接，非收录通知对象 |
+| RevolutionLA/YuE2-Music-Workbench | 自有项目 |
+
+**实现踩坑（勿重犯）：**
+1. **GitHub 的 issues API 会把 PR 也算作 issue**。首次运行时不慎给官方 PR #203 也发了一条，已删除。需按 `pull_request` 字段或标题排除。
+2. **反查通知 issue 必须按 `state=open` 过滤**。早期为若干仓库误开过"重复通知 issue"并自行关闭，若不加状态过滤，`next()` 会选中那条已关闭的重复 issue，从而漏掉真正该评论的原始 issue（YuEGP / YuE-UI / sgsdxzy / smthemex / timoncool 就因此被漏掉，后已补发）。

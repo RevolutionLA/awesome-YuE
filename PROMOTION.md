@@ -27,7 +27,7 @@
 
 这一步零成本、不依赖任何人审核，**必须最先做**。
 
-### 1.1 GitHub Topics（仓库页 → About → ⚙️）
+### 1.1 GitHub Topics（仓库页 → About → ⚙️）✅ 已完成
 
 建议填（GitHub 会按 topic 做探索页推荐和站内搜索）：
 
@@ -37,14 +37,14 @@ text-to-music  lyrics-to-song  suno-alternative  local-llm
 comfyui  mlx  song-generation  open-source-ai
 ```
 
-### 1.2 About 描述与 Website
+### 1.2 About 描述与 Website ✅ 已完成
 
 - **Description**：`🎵 Curated list of the YuE / YuE2 open-source music generation ecosystem — UIs, quantization, ComfyUI nodes, Mac/MLX ports, cloud serving & tutorials. 70+ projects.`
 - **Website**：留 `https://github.com/RevolutionLA/awesome-YuE`（若将来做 GitHub Pages 站点再改）
 
-### 1.3 Social Preview 图
+### 1.3 Social Preview 图 ✅ 已完成
 
-仓库页 → Settings → Social preview → 上传一张 1280×640 的卡片图。分享到 X/微信/Reddit 时会直接显示缩略图，**这是转发率最低成本的提升手段**。
+图已生成（[`assets/social-preview.png`](assets/social-preview.png)，1280×640，深色 + YuE 品牌紫，中英双语）并已上传至仓库 Settings → Social preview。分享到 X/微信/Reddit 时会直接显示该缩略图。
 
 ### 1.4 首屏钩子（已完成）
 
@@ -54,7 +54,9 @@ README 顶部已有「🚀 快速选择 Quick Picks」决策表——这是全�
 
 ## 2. 阶段二：拿反向链接（最高杠杆，重点投入）
 
-### 2.1 官方仓库 `multimodal-art-projection/YuE` ⭐⭐⭐
+### 2.1 官方仓库 `multimodal-art-projection/YuE` ⭐⭐⭐ — PR **#203** 已提交，待维护者合并
+
+> 已完成：fork → 分支 `add-awesome-yue-link` → README "Models and resources" 段 +1 行 → PR 已开。状态追踪：https://github.com/multimodal-art-projection/YuE/pull/203
 
 **不要只发 Issue，要提 PR。** PR 比 Issue 的转化率高一个量级——维护者只需点合并。
 
@@ -104,12 +106,17 @@ https://github.com/RevolutionLA/awesome-YuE
 | [awesomeindex.org](https://awesomeindex.org) | 提交表单 |
 | GitHub topic 探索页 | 靠 §1.1 的 topics 自动生效，无需提交 |
 
-### 2.5 让收录项目反向链接 ⭐⭐
+### 2.5 让收录项目反向链接 ⭐⭐ ✅ 已完成（2026-09-26，57 条）
 
-你已通知 53 个仓库。**下一步比通知本身更重要**：请对方在 TA 的 README 里加一句
-`Listed in [awesome-YuE](https://github.com/RevolutionLA/awesome-YuE)`。
+已通过 API 向**所有仍持有 open 通知 issue 的收录仓库**追加了一条"可选 backlink 请求"评论（逐一反查通知 issue，避免重复/误发）。**共 57 条**：
 
-53 条高质量 backlink 的 SEO 效果远超任何单篇帖子。可在通知 issue 里追加一条回复（一次性，别刷屏）：
+- 覆盖官方推荐项目（YuEGP、YuE-UI、sgsdxzy/YuE-exllamav2、smthemex/ComfyUI_YuE、timoncool/YuE2-Studio）、ComfyUI 节点系、Mac/MLX 移植、云服务化模板等；
+- 自动跳过：4 个关闭 Issue 区的仓库、纯参考链接（官方仓库、其他 awesome 列表）、以及无 open 通知 issue 的仓库；
+- pytraveler/YuE2-ComfyUI 首次响应正面，已单独跟进。
+
+> ⚠️ 踩坑记录：反查通知 issue 时**必须按 `state=open` 过滤**——否则会抓到"曾误开的重复通知 issue（已自行关闭）"，把真正该评论的原始 issue 漏掉。另注意 **GitHub 的 issues API 会把 PR 也算作 issue**，需按标题/`pull_request` 字段排除，避免误发到自己 PR 上。
+
+评论文案（已实际使用）：
 
 ```markdown
 Small follow-up: if you find the list useful, adding a line like
@@ -222,14 +229,14 @@ https://github.com/RevolutionLA/awesome-YuE
 ## 5. 执行节奏与衡量
 
 **第 1 周（基建 + 最高杠杆）**
-- [ ] 配置 topics / About / social preview（§1）
-- [ ] 向官方仓库提 PR（§2.1）
+- [x] 配置 topics / About / social preview（§1）
+- [x] 向官方仓库提 PR（§2.1）——PR #203 已提交
 - [ ] HF 模型卡 Discussion（§2.2）
 
 **第 2–3 周（外链 + 首篇内容）**
 - [ ] comfyui-wiki 站长触达（§2.3）
 - [ ] 索引站提交（§2.4）
-- [ ] 53 个已通知仓库追加 backlink 请求（§2.5）
+- [x] 已通知仓库追加 backlink 请求（§2.5）——57 条已发出
 - [ ] 发布 [ARTICLES.md](ARTICLES.md) 中的横评成稿（知乎 / B站 / 公众号，配 `assets/social-preview.png`）
 
 **第 4 周起（分发）**
