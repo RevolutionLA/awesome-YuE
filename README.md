@@ -13,6 +13,8 @@
 
 **中文为主 · English secondary**（本清单以中文撰写，项目说明辅以英文原名）
 
+简体中文 | [English](README_EN.md)
+
 </div>
 
 ---
@@ -60,7 +62,7 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 
 ---
 
-## 🏛️ 官资源 Official
+## 🏛️ 官方资源 Official
 
 <!-- markdownlint-disable MD034 -->
 
@@ -68,6 +70,8 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 |---|---|---|
 | [multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) | YuE / YuE2 官方仓库。YuE2 引入符号规划（ABC 可编辑乐谱）、零样本翻唱与 agentic 音乐编辑，质量对标 Suno v5 | Apache-2.0 |
 | [YuE2 官网](https://map-yue2.github.io/) | YuE2 项目主页，含在线试听 Demo | — |
+| [NOIZ 在线 Demo](https://noiz.ai/) | 浏览器免费试玩 YuE2，无需安装（官方 README 推荐） | 在线服务 |
+| [Maestro](https://github.com/maestro-ai/maestro) | 本地歌曲生成/作曲规划/翻唱，内置 YuE2（官方 README 推荐） | — |
 | [YuE1 Demo 页](https://map-yue.github.io/) | YuE 首代模型演示页 | — |
 | [arXiv:2503.08638](https://arxiv.org/abs/2503.08638) | 论文《YuE: Scaling Open Foundation Models for Long-Form Music Generation》 | 2025.03 |
 | [m-a-p on Hugging Face](https://huggingface.co/m-a-p) | 全部官方权重：YuE-s1-7B（en/zh/jp-kr × cot/icl）、YuE-s2-1B、YuE2-3B、YuE2-Vae、YuE-upsampler 等 | — |
@@ -88,6 +92,8 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [joeljuvel/YuE-UI](https://github.com/joeljuvel/YuE-UI) | Gradio 界面：批量生成、时间线可视化、增量续写、会话保存/加载，8GB 显存可跑（量化模型） | 跨平台 | YuE 官方 README 推荐 |
 | [sgsdxzy/YuE-exllamav2](https://github.com/sgsdxzy/YuE-exllamav2) | ExLlamaV2 加速实现（含 GUI），YuE1 时代最高效的推理方案之一 | Linux/Win | Apache-2.0 |
 | [alisson-anjos/YuE-exllamav2-UI](https://github.com/alisson-anjos/YuE-exllamav2-UI) | 基于 YuE-exllamav2 的 Gradio UI，RTX 4090 实测端到端 5.45× 提速；提供 Docker 镜像 | Linux/Win/Docker | Apache-2.0 |
+| [alisson-anjos/YuE-Interface](https://github.com/alisson-anjos/YuE-Interface) | Docker 化 Gradio 界面，环境变量一键拉取全部官方/量化模型，本地与 RunPod 均可部署 | Docker/RunPod | — |
+| [WrongProtocol/YuE-exllamav2-UI](https://github.com/WrongProtocol/YuE-exllamav2-UI) | YuE-exllamav2 的原始 Gradio UI（官方 README 推荐） | Linux/Win | — |
 | [vrgamegirl19/Yue2_Studio](https://github.com/vrgamegirl19/Yue2_Studio) | YuE2 桌面音乐工作室 | Windows | Apache-2.0 |
 | [krakenunbound/yue2-studio](https://github.com/krakenunbound/yue2-studio) | 原生 Windows 音乐工作室：本地模型下载、歌词/封面编辑 | Windows | — |
 | [Ladypoly/YuE2_WebUI](https://github.com/Ladypoly/YuE2_WebUI) | YuE2 WebUI | — | Apache-2.0 |
@@ -104,7 +110,7 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 
 | 项目 | 说明 | 备注 |
 |---|---|---|
-| [NoizAI/YuE2-Turbo](https://github.com/NoizAI/YuE2-Turbo) | YuE2 高并发推理：同模型同配方，单首 1.68× 提速、并发 3.31× 提升 | Apache-2.0 |
+| [NoizAI/YuE2-Turbo](https://github.com/NoizAI/YuE2-Turbo) | YuE2 高并发推理与在线服务工具包：同模型同配方，单首 1.68× 提速、并发 3.31× 提升 | Apache-2.0 |
 | [Alissonerdx exl2 量化权重](https://huggingface.co/collections/Alissonerdx/yue-models-exllamav2-67a539be76b5225ebda95323) | YuE-s1-7B 的 ExLlamaV2 全系列量化（3.0–8.0 bpw） | HF Collection |
 | [Doctor-Shotgun/YuE-s1-7B-anneal-en-cot-exl2](https://huggingface.co/Doctor-Shotgun/YuE-s1-7B-anneal-en-cot-exl2) | exl2 量化权重（Q8/Q6 等） | HF |
 | [Alissonerdx/YuE-s1-7B-anneal-en-cot-int8](https://huggingface.co/Alissonerdx/YuE-s1-7B-anneal-en-cot-int8) | bitsandbytes INT8 量化权重 | HF |
