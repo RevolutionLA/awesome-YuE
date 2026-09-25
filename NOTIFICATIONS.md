@@ -1,7 +1,7 @@
 # 收录通知模板 · Notification Templates
 
 > 用途：Awesome YuE 收录新项目后，到对方仓库开一个友好通知 issue。
-> 说明：已使用 GitHub PAT 通过 API 代发（2026-09-26 完成第一批 5 个核心仓库 + 第二批 6 个仓库，重复 issue 已清理；ianiv/YuE2 关闭了 Issue 区，改用讨论/其他渠道或跳过）。
+> 说明：已使用 GitHub PAT 通过 API 代发，**53 个收录仓库全部处理完毕**（2026-09-26）：49 个仓库通知 issue 已发送，4 个仓库（ianiv/YuE2、alisson-anjos/YuE-exllamav2-UI、alisson-anjos/YuE-Interface、WrongProtocol/YuE-exllamav2-UI）关闭了 Issue 区，无法发送——后续可改为关注其 Releases/动态或跳过。
 > 原则：只发一条、语气客气、明确给出"调整/下架"出口与联系方式（liuang0307@foxmail.com）。
 
 ---

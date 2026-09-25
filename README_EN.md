@@ -21,32 +21,15 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 
 ---
 
-## ⭐ Featured
-
-<div align="center">
-
-### 🎹 [YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench)
-
-**Local Offline AI Music Workstation**
-
-YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch queue — fully offline, a free local Suno alternative.
-
-`Windows` · `Python` · `gguf/llama-cpp` · `RVC` · `lyrics2song`
-
-</div>
-
----
-
 ## 📑 Contents
 
 - [Official Resources](#️-official-resources)
 - [GUIs](#-guis)
 - [Quantization & Acceleration](#-quantization--acceleration)
-- [Apple Silicon / Local Ports](#-apple-silicon--local-ports)
+- [Platform & Local Ports](#-platform--local-ports)
 - [ComfyUI Integrations](#-comfyui-integrations)
 - [Music Production Toolchain](#️-music-production-toolchain)
 - [Cloud & Serving](#️-cloud--serving)
-- [Platform Support Windows / Linux](#-platform-support-windows--linux)
 - [Tutorials & Best Practices](#-tutorials--best-practices)
 - [Related Projects](#-related-projects)
 - [Community](#-community)
@@ -62,8 +45,8 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 |---|---|---|
 | [multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) | Official YuE / YuE2 repo. YuE2 adds symbolic planning (editable ABC scores), zero-shot covers and agentic music editing — quality rivaling Suno v5 | Apache-2.0 |
 | [YuE2 website](https://map-yue2.github.io/) | YuE2 project page with online demo | — |
-| [NOIZ online demo](https://noiz.ai/) | Try YuE2 free in the browser, no install (recommended in official README) | Online service |
-| [Maestro](https://github.com/maestro-ai/maestro) | Local song generation, composition planning and covers, powered by YuE2 (official README) | — |
+| [NOIZ online demo](https://yue.noizai.net/) | Try YuE2 free in the browser, no install (recommended in official README) | Online service |
+| [Blizaine/Maestro](https://github.com/Blizaine/Maestro) | Local song generation, composition planning and covers, powered by YuE2 (official README) | — |
 | [YuE1 demo page](https://map-yue.github.io/) | First-generation YuE demo | — |
 | [arXiv:2503.08638](https://arxiv.org/abs/2503.08638) | Paper: *YuE: Scaling Open Foundation Models for Long-Form Music Generation* | 2025.03 |
 | [m-a-p on Hugging Face](https://huggingface.co/m-a-p) | All official weights: YuE-s1-7B (en/zh/jp-kr × cot/icl), YuE-s2-1B, YuE2-3B, YuE2-Vae, YuE-upsampler, etc. | — |
@@ -79,6 +62,7 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 
 | Project | Description | Platform | Notes |
 |---|---|---|---|
+| ⭐ [RevolutionLA/YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench) | Local AI music workstation: YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch queue — 100% offline, ready out of the box | Windows | Featured |
 | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio) | Local AI song generator with an editable score (staff notation) | Windows/Linux | MIT |
 | [deepbeepmeep/YuEGP](https://github.com/deepbeepmeep/YuEGP) | YuEGP: optimized for "GPU poor" users, MMGP memory management | Linux/Win | Recommended in official README |
 | [joeljuvel/YuE-UI](https://github.com/joeljuvel/YuE-UI) | Gradio UI: batch generation, timeline visualization, incremental continuation, session save/load — runs on 8GB VRAM (quantized models) | Cross-platform | Recommended in official README |
@@ -109,9 +93,9 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [ServeurpersoCom/yue2.cpp](https://github.com/ServeurpersoCom/yue2.cpp) | GGML C++17 portable implementation: text + lyrics in, 48kHz stereo out | MIT |
 | [engival/yue2.cpp](https://github.com/engival/yue2.cpp) | ggml/Vulkan implementation of YuE2: a single C++ executable, no Python needed | MIT |
 
-## 🍎 Apple Silicon / Local Ports
+## 📦 Platform & Local Ports
 
-> Native running on Mac (MLX / Core ML) and mobile.
+> Native running and one-click installs on Mac (MLX / Core ML) and Windows / Linux, grouped by platform.
 
 | Project | Description | Notes |
 |---|---|---|
@@ -122,7 +106,14 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [daig/yue2-mlx](https://github.com/daig/yue2-mlx) | BF16-first MLX/MPS experiments, auto-tracking upstream | Apache-2.0 |
 | [arinltte/YuE2Mac](https://github.com/arinltte/YuE2Mac) | Local AI songwriting studio (Mac) | MIT |
 | [smittyPNW/YuE-Studio](https://github.com/smittyPNW/YuE-Studio) | Apple Silicon local creation/editing/mastering, full-quality YuE2 generation and reversible audio processing | Apache-2.0 |
-| [stavitian/yue2-studio](https://github.com/stavitian/yue2-studio) | macOS app + installer: YuE2-3B generation/cover/transcription | — |
+| [stavitian/yue2-studio](https://github.com/stavitian/yue2-studio) | macOS app + installer: YuE2-3B generation/cover/transcription (with 24 GB Mac fixes) | — |
+| [sdbds/YuE-for-windows](https://github.com/sdbds/YuE-for-windows) | YuE1 native Windows support (Gradio + Docker) | Apache-2.0 |
+| [Cognito-Inc-451/Yue2-CUDA-Windows](https://github.com/Cognito-Inc-451/Yue2-CUDA-Windows) | YuE2 CUDA Windows adaptation | — |
+| [siliconsense/yue2-studio-pc](https://github.com/siliconsense/yue2-studio-pc) | One-click batch to run YuE2 on NVIDIA GPUs (songs + covers) | — |
+| [Rdx-ai-art/yue2-mlx.pinokio](https://github.com/Rdx-ai-art/yue2-mlx.pinokio) | Pinokio one-click installer for YuE2-3B (Mac MLX) | — |
+| [deadjoe/yue2_groove](https://github.com/deadjoe/yue2_groove) | Unofficial YuE2 web UI (Apple Silicon first, Linux/CUDA also works), plus a [Pinokio version](https://github.com/deadjoe/yue2-groove-pinokio) | Apache-2.0 |
+| [PasiKoodaa/YuE2-Radio](https://github.com/PasiKoodaa/YuE2-Radio) | Local AI radio (continuous YuE2 playback) | MIT |
+| [Joker56156/tio-music-studio](https://github.com/Joker56156/tio-music-studio) | Local AI music studio: ACE-Step 1.5 / YuE / DiffRhythm integration | — |
 
 ## 🧩 ComfyUI Integrations
 
@@ -169,18 +160,6 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [giapnguyen74/yue2-server](https://github.com/giapnguyen74/yue2-server) | YuE2 model server | — |
 | [John-yg-Yim/LastAlbum-music-api](https://github.com/John-yg-Yim/LastAlbum-music-api) | FastAPI song generation service based on YuE (LastAlbum backend) | — |
 | [usamireko/YuE-exllamav2-Colab](https://github.com/usamireko/YuE-exllamav2-Colab) | One-click YuE-exllamav2 on Google Colab | Apache-2.0 |
-
-## 🪟 Platform Support Windows / Linux
-
-| Project | Description | Notes |
-|---|---|---|
-| [sdbds/YuE-for-windows](https://github.com/sdbds/YuE-for-windows) | YuE1 native Windows support (Gradio + Docker) | Apache-2.0 |
-| [Cognito-Inc-451/Yue2-CUDA-Windows](https://github.com/Cognito-Inc-451/Yue2-CUDA-Windows) | YuE2 CUDA Windows adaptation | — |
-| [siliconsense/yue2-studio-pc](https://github.com/siliconsense/yue2-studio-pc) | One-click batch to run YuE2 on NVIDIA GPUs (songs + covers) | — |
-| [Rdx-ai-art/yue2-mlx.pinokio](https://github.com/Rdx-ai-art/yue2-mlx.pinokio) | Pinokio one-click installer for YuE2-3B (Mac MLX) | — |
-| [deadjoe/yue2_groove](https://github.com/deadjoe/yue2_groove) | Unofficial YuE2 web UI (Apple Silicon first, Linux/CUDA also works), plus a [Pinokio version](https://github.com/deadjoe/yue2-groove-pinokio) | Apache-2.0 |
-| [PasiKoodaa/YuE2-Radio](https://github.com/PasiKoodaa/YuE2-Radio) | Local AI radio (continuous YuE2 playback) | MIT |
-| [Joker56156/tio-music-studio](https://github.com/Joker56156/tio-music-studio) | Local AI music studio: ACE-Step 1.5 / YuE / DiffRhythm integration | — |
 
 ## 📚 Tutorials & Best Practices
 

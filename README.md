@@ -11,8 +11,6 @@
 [![Powered by YuE](https://img.shields.io/badge/Powered%20by-YuE-8A2BE2)](https://github.com/multimodal-art-projection/YuE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**中文为主 · English secondary**（本清单以中文撰写，项目说明辅以英文原名）
-
 简体中文 | [English](README_EN.md)
 
 </div>
@@ -28,33 +26,15 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 
 ---
 
-## ⭐ 特别推荐 Featured
-
-<div align="center">
-
-### 🎹 [YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench)
-
-**本地 AI 音乐生成工作站 · Local Offline AI Music Workstation**
-
-YuE2 写歌 + AI 翻唱 + RVC 换声 + LRC 滚动歌词 + 批量队列，100% 离线开箱即用，一个免费的本地 Suno 替代方案。
-YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch queue — fully offline, a free local Suno alternative.
-
-`Windows` · `Python` · `gguf/llama-cpp` · `RVC` · `lyrics2song`
-
-</div>
-
----
-
 ## 📑 目录
 
 - [官方资源 Official](#官方资源-official)
 - [图形界面 GUI](#图形界面-gui)
 - [量化与推理加速 Quantization & Acceleration](#量化与推理加速-quantization--acceleration)
-- [Apple Silicon / 本地移植 Local Ports](#apple-silicon--本地移植-local-ports)
+- [平台适配与本地移植 Platform and Local Ports](#平台适配与本地移植-platform-and-local-ports)
 - [ComfyUI 集成 ComfyUI Integrations](#comfyui-集成-comfyui-integrations)
 - [音乐制作工具链 Music Production Toolchain](#音乐制作工具链-music-production-toolchain)
 - [云部署与服务化 Cloud & Serving](#云部署与服务化-cloud--serving)
-- [平台适配 Windows / Linux](#平台适配-windows--linux)
 - [教程与最佳实践 Tutorials & Best Practices](#教程与最佳实践-tutorials--best-practices)
 - [相关项目 Related Projects](#相关项目-related-projects)
 - [社区 Community](#社区-community)
@@ -70,8 +50,8 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 |---|---|---|
 | [multimodal-art-projection/YuE](https://github.com/multimodal-art-projection/YuE) | YuE / YuE2 官方仓库。YuE2 引入符号规划（ABC 可编辑乐谱）、零样本翻唱与 agentic 音乐编辑，质量对标 Suno v5 | Apache-2.0 |
 | [YuE2 官网](https://map-yue2.github.io/) | YuE2 项目主页，含在线试听 Demo | — |
-| [NOIZ 在线 Demo](https://noiz.ai/) | 浏览器免费试玩 YuE2，无需安装（官方 README 推荐） | 在线服务 |
-| [Maestro](https://github.com/maestro-ai/maestro) | 本地歌曲生成/作曲规划/翻唱，内置 YuE2（官方 README 推荐） | — |
+| [NOIZ 在线 Demo](https://yue.noizai.net/) | 浏览器免费试玩 YuE2，无需安装（官方 README 推荐） | 在线服务 |
+| [Blizaine/Maestro](https://github.com/Blizaine/Maestro) | 本地歌曲生成/作曲规划/翻唱，内置 YuE2（官方 README 推荐） | — |
 | [YuE1 Demo 页](https://map-yue.github.io/) | YuE 首代模型演示页 | — |
 | [arXiv:2503.08638](https://arxiv.org/abs/2503.08638) | 论文《YuE: Scaling Open Foundation Models for Long-Form Music Generation》 | 2025.03 |
 | [m-a-p on Hugging Face](https://huggingface.co/m-a-p) | 全部官方权重：YuE-s1-7B（en/zh/jp-kr × cot/icl）、YuE-s2-1B、YuE2-3B、YuE2-Vae、YuE-upsampler 等 | — |
@@ -87,6 +67,7 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 
 | 项目 | 说明 | 平台 | 备注 |
 |---|---|---|---|
+| ⭐ [RevolutionLA/YuE2-Music-Workbench](https://github.com/RevolutionLA/YuE2-Music-Workbench) | 本地 AI 音乐生成工作站：YuE2 写歌 + AI 翻唱 + RVC 换声 + LRC 滚动歌词 + 批量队列，100% 离线开箱即用 | Windows | 特别推荐 |
 | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio) | 本地 AI 歌曲生成器，带可编辑乐谱（五线谱） | Windows/Linux | MIT |
 | [deepbeepmeep/YuEGP](https://github.com/deepbeepmeep/YuEGP) | YuEGP：专为"显卡穷人"优化（GPU Poor），MMGP 显存管理 | Linux/Win | YuE 官方 README 推荐 |
 | [joeljuvel/YuE-UI](https://github.com/joeljuvel/YuE-UI) | Gradio 界面：批量生成、时间线可视化、增量续写、会话保存/加载，8GB 显存可跑（量化模型） | 跨平台 | YuE 官方 README 推荐 |
@@ -117,9 +98,9 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [ServeurpersoCom/yue2.cpp](https://github.com/ServeurpersoCom/yue2.cpp) | GGML C++17 便携实现：文本+歌词进，48kHz 立体声出 | MIT |
 | [engival/yue2.cpp](https://github.com/engival/yue2.cpp) | YuE2 的 ggml/Vulkan 实现：单个 C++ 可执行文件，无需 Python | MIT |
 
-## 🍎 Apple Silicon / 本地移植 Local Ports
+## 📦 平台适配与本地移植 Platform and Local Ports
 
-> Mac（MLX / Core ML）与移动端原生运行。
+> Mac（MLX / Core ML）与 Windows / Linux 的原生运行与一键安装，按平台分组。
 
 | 项目 | 说明 | 备注 |
 |---|---|---|
@@ -130,7 +111,14 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [daig/yue2-mlx](https://github.com/daig/yue2-mlx) | BF16 优先的 MLX/MPS 实验，自动跟随上游 | Apache-2.0 |
 | [arinltte/YuE2Mac](https://github.com/arinltte/YuE2Mac) | 本地 AI 歌曲创作工作室（Mac） | MIT |
 | [smittyPNW/YuE-Studio](https://github.com/smittyPNW/YuE-Studio) | Apple Silicon 本地创作/编辑/母带，全质量 YuE2 生成与可逆音频处理 | Apache-2.0 |
-| [stavitian/yue2-studio](https://github.com/stavitian/yue2-studio) | macOS 应用 + 安装器：YuE2-3B 生成/翻唱/转写 | — |
+| [stavitian/yue2-studio](https://github.com/stavitian/yue2-studio) | macOS 应用 + 安装器：YuE2-3B 生成/翻唱/转写（含 24GB Mac 修复） | — |
+| [sdbds/YuE-for-windows](https://github.com/sdbds/YuE-for-windows) | YuE1 Windows 原生支持（Gradio + Docker） | Apache-2.0 |
+| [Cognito-Inc-451/Yue2-CUDA-Windows](https://github.com/Cognito-Inc-451/Yue2-CUDA-Windows) | YuE2 CUDA Windows 适配 | — |
+| [siliconsense/yue2-studio-pc](https://github.com/siliconsense/yue2-studio-pc) | 一键批处理在 NVIDIA 显卡上运行 YuE2（生歌 + 翻唱） | — |
+| [Rdx-ai-art/yue2-mlx.pinokio](https://github.com/Rdx-ai-art/yue2-mlx.pinokio) | YuE2-3B 的 Pinokio 一键安装包（Mac MLX） | — |
+| [deadjoe/yue2_groove](https://github.com/deadjoe/yue2_groove) | 非官方 YuE2 Web UI（Apple Silicon 优先，Linux/CUDA 可用），另有 [Pinokio 版](https://github.com/deadjoe/yue2-groove-pinokio) | Apache-2.0 |
+| [PasiKoodaa/YuE2-Radio](https://github.com/PasiKoodaa/YuE2-Radio) | 本地 AI 电台（YuE2 持续播放） | MIT |
+| [Joker56156/tio-music-studio](https://github.com/Joker56156/tio-music-studio) | 本地 AI 音乐工作室：ACE-Step 1.5 / YuE / DiffRhythm 集成 | — |
 
 ## 🧩 ComfyUI 集成 ComfyUI Integrations
 
@@ -177,18 +165,6 @@ YuE2 songwriting + AI covers + RVC voice conversion + LRC synced lyrics + batch 
 | [giapnguyen74/yue2-server](https://github.com/giapnguyen74/yue2-server) | YuE2 模型服务器 | — |
 | [John-yg-Yim/LastAlbum-music-api](https://github.com/John-yg-Yim/LastAlbum-music-api) | 基于 YuE 的 FastAPI 歌曲生成服务（LastAlbum 后端） | — |
 | [usamireko/YuE-exllamav2-Colab](https://github.com/usamireko/YuE-exllamav2-Colab) | Google Colab 一键运行 YuE-exllamav2 | Apache-2.0 |
-
-## 🪟 平台适配 Windows / Linux
-
-| 项目 | 说明 | 备注 |
-|---|---|---|
-| [sdbds/YuE-for-windows](https://github.com/sdbds/YuE-for-windows) | YuE1 Windows 原生支持（Gradio + Docker） | Apache-2.0 |
-| [Cognito-Inc-451/Yue2-CUDA-Windows](https://github.com/Cognito-Inc-451/Yue2-CUDA-Windows) | YuE2 CUDA Windows 适配 | — |
-| [siliconsense/yue2-studio-pc](https://github.com/siliconsense/yue2-studio-pc) | 一键批处理在 NVIDIA 显卡上运行 YuE2（生歌 + 翻唱） | — |
-| [Rdx-ai-art/yue2-mlx.pinokio](https://github.com/Rdx-ai-art/yue2-mlx.pinokio) | YuE2-3B 的 Pinokio 一键安装包（Mac MLX） | — |
-| [deadjoe/yue2_groove](https://github.com/deadjoe/yue2_groove) | 非官方 YuE2 Web UI（Apple Silicon 优先，Linux/CUDA 可用），另有 [Pinokio 版](https://github.com/deadjoe/yue2-groove-pinokio) | Apache-2.0 |
-| [PasiKoodaa/YuE2-Radio](https://github.com/PasiKoodaa/YuE2-Radio) | 本地 AI 电台（YuE2 持续播放） | MIT |
-| [Joker56156/tio-music-studio](https://github.com/Joker56156/tio-music-studio) | 本地 AI 音乐工作室：ACE-Step 1.5 / YuE / DiffRhythm 集成 | — |
 
 ## 📚 教程与最佳实践 Tutorials & Best Practices
 

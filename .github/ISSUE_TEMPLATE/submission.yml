@@ -31,11 +31,10 @@ body:
         - 官方资源 Official
         - 图形界面 GUI
         - 量化与推理加速 Quantization & Acceleration
-        - Apple Silicon / 本地移植 Local Ports
+        - 平台适配与本地移植 Platform and Local Ports
         - ComfyUI 集成 ComfyUI Integrations
         - 音乐制作工具链 Music Production Toolchain
         - 云部署与服务化 Cloud & Serving
-        - 平台适配 Windows / Linux
         - 教程与最佳实践 Tutorials & Best Practices
         - 相关项目 Related Projects
     validations:

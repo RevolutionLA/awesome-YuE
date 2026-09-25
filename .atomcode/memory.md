@@ -1,0 +1,1 @@
+- awesome-YuE 收录通知中使用的维护者联系邮箱是 liuang0307@foxmail.com（原 592213965@qq.com 已弃用）
