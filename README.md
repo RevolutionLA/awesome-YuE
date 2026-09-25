@@ -28,17 +28,17 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 
 ## 📑 目录
 
-- [官方资源 Official](#官方资源-official)
-- [图形界面 GUI](#图形界面-gui)
-- [量化与推理加速 Quantization & Acceleration](#量化与推理加速-quantization--acceleration)
-- [平台适配与本地移植 Platform and Local Ports](#平台适配与本地移植-platform-and-local-ports)
-- [ComfyUI 集成 ComfyUI Integrations](#comfyui-集成-comfyui-integrations)
-- [音乐制作工具链 Music Production Toolchain](#音乐制作工具链-music-production-toolchain)
-- [云部署与服务化 Cloud & Serving](#云部署与服务化-cloud--serving)
-- [教程与最佳实践 Tutorials & Best Practices](#教程与最佳实践-tutorials--best-practices)
-- [相关项目 Related Projects](#相关项目-related-projects)
-- [社区 Community](#社区-community)
-- [贡献 Contributing](#贡献-contributing)
+- [官方资源 Official](#️-官方资源-official)
+- [图形界面 GUI](#️-图形界面-gui)
+- [量化与推理加速 Quantization & Acceleration](#-量化与推理加速-quantization--acceleration)
+- [平台适配与本地移植 Platform and Local Ports](#-平台适配与本地移植-platform-and-local-ports)
+- [ComfyUI 集成 ComfyUI Integrations](#-comfyui-集成-comfyui-integrations)
+- [音乐制作工具链 Music Production Toolchain](#️-音乐制作工具链-music-production-toolchain)
+- [云部署与服务化 Cloud & Serving](#️-云部署与服务化-cloud--serving)
+- [教程与最佳实践 Tutorials & Best Practices](#-教程与最佳实践-tutorials--best-practices)
+- [相关项目 Related Projects](#-相关项目-related-projects)
+- [社区 Community](#-社区-community)
+- [贡献 Contributing](#-贡献-contributing)
 
 ---
 
