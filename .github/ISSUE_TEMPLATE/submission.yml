@@ -1,0 +1,56 @@
+name: 收录建议 · Submission
+description: 建议收录一个 YuE / YuE2 生态项目 · Suggest a project for inclusion
+title: 'Add: <owner>/<repo>'
+labels: ['submission']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢贡献！请先阅读 [CONTRIBUTING.md](../../blob/main/CONTRIBUTING.md) 的收录标准。
+        Thanks for contributing! Please read the inclusion criteria in [CONTRIBUTING.md](../../blob/main/CONTRIBUTING.md) first.
+  - type: input
+    id: url
+    attributes:
+      label: 项目链接 · Project URL
+      description: 仓库或资源地址
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 一句话说明 · One-line description
+      description: 它是什么？解决了什么问题？（≤50 字，中文优先）
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 建议分类 · Suggested category
+      options:
+        - 官方资源 Official
+        - 图形界面 GUI
+        - 量化与推理加速 Quantization & Acceleration
+        - Apple Silicon / 本地移植 Local Ports
+        - ComfyUI 集成 ComfyUI Integrations
+        - 音乐制作工具链 Music Production Toolchain
+        - 云部署与服务化 Cloud & Serving
+        - 平台适配 Windows / Linux
+        - 教程与最佳实践 Tutorials & Best Practices
+        - 相关项目 Related Projects
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: 许可证 · License
+      description: 例如 Apache-2.0 / MIT；若无 LICENSE 文件填「—」
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 自查清单 · Checklist
+      options:
+        - label: 项目与 YuE / YuE2 直接相关
+        - label: 仓库公开可访问，README 完整
+        - label: 近 6 个月有维护活动（经典存档项目请注明）
+        - label: 非无实质改动的 fork

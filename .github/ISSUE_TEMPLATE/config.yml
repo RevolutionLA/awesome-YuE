@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: YuE 官方仓库 Issues
+    url: https://github.com/multimodal-art-projection/YuE/issues
+    about: 模型本身的问题请到官方仓库反馈 · Report model issues upstream
