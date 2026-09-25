@@ -1,8 +1,8 @@
 # 收录通知模板 · Notification Templates
 
 > 用途：Awesome YuE 收录新项目后，到对方仓库开一个友好通知 issue。
-> 说明：本机未配置 GitHub 凭据（无 `gh` CLI / `GITHUB_TOKEN`），无法自动代发；请手动到各仓库 Issues → New Issue 粘贴以下内容。
-> 原则：只发一条、语气客气、明确给出"调整/下架"出口与联系方式（592213965@qq.com）。
+> 说明：已使用 GitHub PAT 通过 API 代发（2026-09-26 完成第一批 5 个核心仓库 + 第二批 6 个仓库，重复 issue 已清理；ianiv/YuE2 关闭了 Issue 区，改用讨论/其他渠道或跳过）。
+> 原则：只发一条、语气客气、明确给出"调整/下架"出口与联系方式（liuang0307@foxmail.com）。
 
 ---
 
@@ -22,7 +22,7 @@ I'm happy to let you know that **your project has been included** in the list:
 - List entry: <在此粘贴 README 中对应条目的锚点链接>
 - Repo: <owner>/<repo>
 
-If you'd like the description adjusted, moved to another category, or removed entirely, just reply here or email **592213965@qq.com** — no questions asked.
+If you'd like the description adjusted, moved to another category, or removed entirely, just reply here or email **liuang0307@foxmail.com** — no questions asked.
 
 If you find the list useful, a ⭐ or a link back is always appreciated but never required.
 
@@ -47,7 +47,7 @@ Thanks for building for the YuE community! 🎶
 - 条目位置：<在此粘贴 README 中对应条目的锚点链接>
 - 仓库：<owner>/<repo>
 
-如果希望修改描述、调整分类或**下架**，直接在本 issue 回复，或发邮件到 **592213965@qq.com**，我们会尽快处理。
+如果希望修改描述、调整分类或**下架**，直接在本 issue 回复，或发邮件到 **liuang0307@foxmail.com**，我们会尽快处理。
 
 如果觉得这份清单有用，欢迎点个 ⭐ 或互相加个链接（非必须）。
 
