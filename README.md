@@ -142,6 +142,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [deadjoe/yue2_groove](https://github.com/deadjoe/yue2_groove) | 非官方 YuE2 Web UI（Apple Silicon 优先，Linux/CUDA 可用），另有 [Pinokio 版](https://github.com/deadjoe/yue2-groove-pinokio) | Apache-2.0 |
 | [PasiKoodaa/YuE2-Radio](https://github.com/PasiKoodaa/YuE2-Radio) | 本地 AI 电台（YuE2 持续播放） | MIT |
 | [Joker56156/tio-music-studio](https://github.com/Joker56156/tio-music-studio) | 本地 AI 音乐工作室：ACE-Step 1.5 / YuE / DiffRhythm 集成 | — |
+| [Arthur031221/songforge](https://github.com/Arthur031221/songforge) | 本地 Suno 式歌曲工作室：Apple Silicon 上用 MLX 运行 YuE2，歌词生成带人声歌曲/翻唱 | MIT |
 
 ## 🧩 ComfyUI 集成 ComfyUI Integrations
 
