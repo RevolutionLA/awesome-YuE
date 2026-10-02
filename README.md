@@ -56,6 +56,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | 显存 16GB | [exl2 / INT8 量化权重](#-量化与推理加速-quantization--acceleration) |
 | 显存 8GB | [deepbeepmeep/YuEGP](https://github.com/deepbeepmeep/YuEGP) 或 [YuE-UI 量化模式](https://github.com/joeljuvel/YuE-UI) |
 | Mac（Apple Silicon） | [vanch007/mlx-Yue](https://github.com/vanch007/mlx-Yue) 或 [tonywestonuk/YuE-Studio](https://github.com/tonywestonuk/YuE-Studio) |
+| iPhone 上直接出歌（不连服务器） | [PocketAnthem](https://apps.apple.com/us/app/pocketanthem/id6815755463) — App Store 应用，YuE2-3B 经 MLX 全程跑在手机本地 |
 | 想在 ComfyUI 里用 | ComfyUI 原生 `YuE2GenerateMusic` 节点，见 [ComfyUI 集成](#-comfyui-集成-comfyui-integrations) |
 | 想改乐谱 / 保留旋律换歌词 | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio)（五线谱）· [FL-YuE2](https://github.com/filliptm/ComfyUI-FL-YuE2)（钢琴卷帘） |
 | 要跑云端 / 需要 API | [sruckh/Yue2-runpod](https://github.com/sruckh/Yue2-runpod) · [yue2-sidecar](https://github.com/Sparaa/yue2-sidecar)（FastAPI） |
@@ -118,6 +119,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [Alissonerdx exl2 量化权重](https://huggingface.co/collections/Alissonerdx/yue-models-exllamav2-67a539be76b5225ebda95323) | YuE-s1-7B 的 ExLlamaV2 全系列量化（3.0–8.0 bpw） | HF Collection |
 | [Doctor-Shotgun/YuE-s1-7B-anneal-en-cot-exl2](https://huggingface.co/Doctor-Shotgun/YuE-s1-7B-anneal-en-cot-exl2) | exl2 量化权重（Q8/Q6 等） | HF |
 | [Alissonerdx/YuE-s1-7B-anneal-en-cot-int8](https://huggingface.co/Alissonerdx/YuE-s1-7B-anneal-en-cot-int8) | bitsandbytes INT8 量化权重 | HF |
+| [VincentGOURBIN/yue2-mlx-packs](https://huggingface.co/VincentGOURBIN/yue2-mlx-packs) | YuE2-3B 的 MLX 预量化包（int4-mixed-head 2.5 GB / qint8-all-head 3.5 GB / int4-head 4.4 GB），引擎下载时 SHA-256 校验 | HF |
 | [ServeurpersoCom/yue2.cpp](https://github.com/ServeurpersoCom/yue2.cpp) | GGML C++17 便携实现：文本+歌词进，48kHz 立体声出 | MIT |
 | [engival/yue2.cpp](https://github.com/engival/yue2.cpp) | YuE2 的 ggml/Vulkan 实现：单个 C++ 可执行文件，无需 Python | MIT |
 
@@ -130,7 +132,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [tonywestonuk/YuE-Studio](https://github.com/tonywestonuk/YuE-Studio) | 原生 Mac 应用，面向 Apple Silicon（GPU + Neural Engine）调优 | Apache-2.0 |
 | [vanch007/mlx-Yue](https://github.com/vanch007/mlx-Yue) | YuE2-3B 的 Apple Silicon MLX 原生移植（含音频转写） | Apache-2.0 |
 | [ianiv/YuE2](https://github.com/ianiv/YuE2) | YuE2 Studio：Apple Silicon（MLX）上的本地 Web 应用 | MIT |
-| [VincentGourbin/yue2-mlx-swift](https://github.com/VincentGourbin/yue2-mlx-swift) | Swift/MLX 移植：歌词+风格 → 完整歌曲 | MIT |
+| [VincentGourbin/yue2-mlx-swift](https://github.com/VincentGourbin/yue2-mlx-swift) | Swift/MLX 移植（Mac + iPhone 全本地）：歌词+风格 → 完整歌曲，App Store 应用 [PocketAnthem](https://apps.apple.com/us/app/pocketanthem/id6815755463) 的引擎，7 个参考量化配置（4bit-tiny 2.6 GB 起） | MIT |
 | [daig/yue2-mlx](https://github.com/daig/yue2-mlx) | BF16 优先的 MLX/MPS 实验，自动跟随上游 | Apache-2.0 |
 | [arinltte/YuE2Mac](https://github.com/arinltte/YuE2Mac) | 本地 AI 歌曲创作工作室（Mac） | MIT |
 | [smittyPNW/YuE-Studio](https://github.com/smittyPNW/YuE-Studio) | Apple Silicon 本地创作/编辑/母带，全质量 YuE2 生成与可逆音频处理 | Apache-2.0 |
