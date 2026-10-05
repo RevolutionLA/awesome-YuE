@@ -134,7 +134,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [ianiv/YuE2](https://github.com/ianiv/YuE2) | YuE2 Studio：Apple Silicon（MLX）上的本地 Web 应用 | MIT |
 | [VincentGourbin/yue2-mlx-swift](https://github.com/VincentGourbin/yue2-mlx-swift) | Swift/MLX 移植（Mac + iPhone 全本地）：歌词+风格 → 完整歌曲，App Store 应用 [PocketAnthem](https://apps.apple.com/us/app/pocketanthem/id6815755463) 的引擎，7 个参考量化配置（4bit-tiny 2.6 GB 起） | MIT |
 | [daig/yue2-mlx](https://github.com/daig/yue2-mlx) | BF16 优先的 MLX/MPS 实验，自动跟随上游 | Apache-2.0 |
-| [arinltte/YuE2Mac](https://github.com/arinltte/YuE2Mac) | 本地 AI 歌曲创作工作室（Mac） | MIT |
+| [arinltte/YuE2Mac](https://github.com/arinltte/YuE2Mac) | macOS 原生歌曲创作工作室：YuE2-3B 本地 MLX 运行，LITE/PRO 双 UI、队列、歌曲库、草稿→成品、可编辑 ABC 乐谱、高级采样、Apple Intelligence 本地 AI 写词 | MIT |
 | [smittyPNW/YuE-Studio](https://github.com/smittyPNW/YuE-Studio) | Apple Silicon 本地创作/编辑/母带，全质量 YuE2 生成与可逆音频处理 | Apache-2.0 |
 | [stavitian/yue2-studio](https://github.com/stavitian/yue2-studio) | macOS 应用 + 安装器：YuE2-3B 生成/翻唱/转写（含 24GB Mac 修复） | — |
 | [sdbds/YuE-for-windows](https://github.com/sdbds/YuE-for-windows) | YuE1 Windows 原生支持（Gradio + Docker） | Apache-2.0 |
