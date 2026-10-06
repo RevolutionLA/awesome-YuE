@@ -107,7 +107,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [CodeCat04/Whiskerwave-Studio](https://github.com/CodeCat04/Whiskerwave-Studio) | 本地优先的 YuE2 生成 GUI + Ollama 辅助作词 | — | — |
 | [DocShotgun/ds-yue-webui](https://github.com/DocShotgun/ds-yue-webui) | YuE2 WebUI：生成 / 翻唱 / 编辑 | — | — |
 | [aidec/YuE-exllamav2-GUI-easy](https://github.com/aidec/YuE-exllamav2-GUI-easy) | YuE-exllamav2 简易版 GUI（繁体中文界面） | Windows | — |
-| [LeeAeron/YuE2UI](https://github.com/LeeAeron/YuE2UI) | YuE2 桌面应用 | — | Apache-2.0 |
+| [LeeAeron/YuE2UI](https://github.com/LeeAeron/YuE2UI) | YuE2 桌面应用（深度改版独立开发，暂未公开源码） | Windows 10/11 | Apache-2.0 |
 
 ## ⚡ 量化与推理加速 Quantization & Acceleration
 
