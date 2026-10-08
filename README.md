@@ -60,7 +60,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | 想在 ComfyUI 里用 | ComfyUI 原生 `YuE2GenerateMusic` 节点，见 [ComfyUI 集成](#-comfyui-集成-comfyui-integrations) |
 | 想改乐谱 / 保留旋律换歌词 | [timoncool/YuE2-Studio](https://github.com/timoncool/YuE2-Studio)（五线谱）· [FL-YuE2](https://github.com/filliptm/ComfyUI-FL-YuE2)（钢琴卷帘） |
 | 要跑云端 / 需要 API | [sruckh/Yue2-runpod](https://github.com/sruckh/Yue2-runpod) · [yue2-sidecar](https://github.com/Sparaa/yue2-sidecar)（FastAPI） |
-| 不想装 Python 环境 | [yue2.cpp](https://github.com/engival/yue2.cpp) — 单个 C++ 可执行文件 |
+| 不想装 Python 环境 | [yue2.cpp](https://github.com/engival/yue2.cpp) — 单个 C++ 可执行文件，v0.1.0 起有现成二进制下载 |
 
 > 显存不够？直接翻到 [量化与推理加速](#-量化与推理加速-quantization--acceleration)；想系统了解写法，看 [教程与最佳实践](#-教程与最佳实践-tutorials--best-practices)。
 
@@ -121,7 +121,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | [Alissonerdx/YuE-s1-7B-anneal-en-cot-int8](https://huggingface.co/Alissonerdx/YuE-s1-7B-anneal-en-cot-int8) | bitsandbytes INT8 量化权重 | HF |
 | [VincentGOURBIN/yue2-mlx-packs](https://huggingface.co/VincentGOURBIN/yue2-mlx-packs) | YuE2-3B 的 MLX 预量化包（int4-mixed-head 2.5 GB / qint8-all-head 3.5 GB / int4-head 4.4 GB），引擎下载时 SHA-256 校验 | HF |
 | [ServeurpersoCom/yue2.cpp](https://github.com/ServeurpersoCom/yue2.cpp) | GGML C++17 便携实现：文本+歌词进，48kHz 立体声出 | MIT |
-| [engival/yue2.cpp](https://github.com/engival/yue2.cpp) | YuE2 的 ggml/Vulkan 实现：单个 C++ 可执行文件，无需 Python | MIT |
+| [engival/yue2.cpp](https://github.com/engival/yue2.cpp) | YuE2 的 ggml/Vulkan 实现：单个 C++ 可执行文件，无需 Python（[v0.1.0 起提供二进制下载](https://github.com/engival/yue2.cpp/releases)）；实验特性：编辑 context 窗口，可在曲中指定位置换 prompt/风格（[演示](https://www.youtube.com/watch?v=gMS2Ko7s97o)） | MIT |
 
 ## 📦 平台适配与本地移植 Platform and Local Ports
 
