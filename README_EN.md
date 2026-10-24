@@ -17,7 +17,7 @@
 
 YuE (乐) is an open-source full-song music generation foundation model by the [m-a-p](https://github.com/multimodal-art-projection) team (lyrics2song) — often called "open-source Suno". Since its release in January 2025 the community has built a rich ecosystem of UIs, quantized runtimes, ComfyUI nodes, local ports and music-production workflows. YuE2 (September 2026) adds symbolic planning with editable ABC scores, zero-shot covers, instrumental generation and agentic music editing; the ecosystem now spans GGUF/C++ runtimes, LoRA training, DAW integration and mobile. This repo curates the best of the **YuE / YuE2 ecosystem**.
 
-> 📊 **95+ projects listed** · Last updated 2026-10-21 · Link health checked quarterly
+> 📊 **99 entries (78 GitHub projects + model weights, tutorials and hosted services)** · Recent changes in [commit history](https://github.com/RevolutionLA/awesome-YuE/commits/main) · Link health guarded by a [weekly automated check](https://github.com/RevolutionLA/awesome-YuE/actions/workflows/link-check.yml)
 > 📌 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion criteria. Categories are loosely ordered by popularity/activity.
 
 ---
@@ -195,7 +195,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | Project | Description | Notes |
 |---|---|---|
 | [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | Train a YuE2 style LoRA inside ComfyUI (NAR branch, 24GB VRAM recommended), native ComfyUI format output | — |
-| [speedyrulz/ComfyUI-YuE2-Trainer](https://github.com/speedyrulz/ComfyUI-YuE2-Trainer) | Train NAR acoustic MODEL LoRAs and AR planner CLIP LoRAs separately inside ComfyUI; loadable by the native YuE2 nodes | Apache-2.0 |
+| [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | Train NAR acoustic MODEL LoRAs and AR planner CLIP LoRAs separately inside ComfyUI; loadable by the native YuE2 nodes | Apache-2.0 |
 | [Mothersuperior/YuE2-instrumental-cot-full-loras](https://huggingface.co/Mothersuperior/YuE2-instrumental-cot-full-loras) | Instrumental AR LoRA (rank 64, trained on 2.7k instrumental tracks + SheetSage2 ABC); use with `cot="full"` for section-planned instrumentals | CC BY-NC 4.0 |
 | [scragnog/YuE2-GGUF](https://huggingface.co/scragnog/YuE2-GGUF) | HOT-Step `int8_convrot` base for joint AR/NAR training (training-only GGUF) with the native C++ trainer | CC BY-NC 4.0 |
 

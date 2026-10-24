@@ -1,0 +1,36 @@
+name: link-check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "README_EN.md"
+      - "ARTICLES.md"
+      - "scripts/check_links.py"
+      - ".github/workflows/link-check.yml"
+  schedule:
+    # 每周一 01:00 UTC（北京时间周一 09:00）
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          python scripts/check_links.py --all
+          rc=$?
+          echo "exit=$rc"
+          echo "### 链接巡检结果（exit=$rc）" >> "$GITHUB_STEP_SUMMARY"
+          python scripts/check_links.py --all >> "$GITHUB_STEP_SUMMARY" 2>&1 || true
+          exit $rc

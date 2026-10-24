@@ -9,6 +9,8 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/RevolutionLA/awesome-YuE?style=social)](https://github.com/RevolutionLA/awesome-YuE/stargazers)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 [![Powered by YuE](https://img.shields.io/badge/Powered%20by-YuE-8A2BE2)](https://github.com/multimodal-art-projection/YuE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![link-check](https://github.com/RevolutionLA/awesome-YuE/actions/workflows/link-check.yml/badge.svg)](https://github.com/RevolutionLA/awesome-YuE/actions/workflows/link-check.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 简体中文 | [English](README_EN.md)
@@ -21,7 +23,7 @@ YuE（乐）是 [m-a-p](https://github.com/multimodal-art-projection) 团队开�
 
 YuE (乐) is an open-source full-song music generation foundation model by the [m-a-p](https://github.com/multimodal-art-projection) team (lyrics2song) — often called "open-source Suno". Since its release in January 2025 the community has built a rich ecosystem of UIs, quantized runtimes, ComfyUI nodes, local ports and music-production workflows. YuE2 (September 2026) adds symbolic planning with editable ABC scores, zero-shot covers, instrumental generation and agentic music editing; the ecosystem now spans GGUF/C++ runtimes, LoRA training, DAW integration and mobile. This repo curates the best of the **YuE / YuE2 ecosystem**.
 
-> 📊 **收录 95+ 个项目** · 最近更新 2026-10-21 · 每季度巡检链接有效性
+> 📊 **收录 99 条（78 个 GitHub 项目 + 模型权重/教程/云服务）** · 最近更新见 [提交历史](https://github.com/RevolutionLA/awesome-YuE/commits/main) · 链接有效性由 [每周自动巡检](https://github.com/RevolutionLA/awesome-YuE/actions/workflows/link-check.yml) 守护
 > 📌 收录标准与提交方式见 [贡献指南](CONTRIBUTING.md)。分类排序大致按热度/活跃度，仅供浏览参考。
 > 📌 See [CONTRIBUTING.md](CONTRIBUTING.md) for inclusion criteria. Categories are loosely ordered by popularity/activity.
 
@@ -200,7 +202,7 @@ YuE (乐) is an open-source full-song music generation foundation model by the [
 | 项目 | 说明 | 备注 |
 |---|---|---|
 | [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | ComfyUI 内训练 YuE2 风格 LoRA（NAR 分支，24GB 显存推荐），输出 ComfyUI 原生格式 | — |
-| [speedyrulz/ComfyUI-YuE2-Trainer](https://github.com/speedyrulz/ComfyUI-YuE2-Trainer) | 在 ComfyUI 内分别训练 NAR 声学 MODEL LoRA 与 AR planner CLIP LoRA，可直接给原生 YuE2 节点加载 | Apache-2.0 |
+| [Starnodes2024/ComfyUI-YuE2-Trainer](https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer) | 在 ComfyUI 内分别训练 NAR 声学 MODEL LoRA 与 AR planner CLIP LoRA，可直接给原生 YuE2 节点加载 | Apache-2.0 |
 | [Mothersuperior/YuE2-instrumental-cot-full-loras](https://huggingface.co/Mothersuperior/YuE2-instrumental-cot-full-loras) | 纯音乐 AR LoRA（rank 64，2.7k 首器乐 + SheetSage2 ABC 训练），配合 `cot="full"` 生成有段落规划的纯音乐 | CC BY-NC 4.0 |
 | [scragnog/YuE2-GGUF](https://huggingface.co/scragnog/YuE2-GGUF) | HOT-Step 联合 AR/NAR 训练用 `int8_convrot` 基座（非推理 GGUF），配套原生 C++ 训练器 | CC BY-NC 4.0 |
 
